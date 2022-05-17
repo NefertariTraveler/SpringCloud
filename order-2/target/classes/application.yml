@@ -1,0 +1,14 @@
+server:
+  port: 4002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka3001.com:3001/eureka,http://eureka3002.com:3002/eureka,http://eureka3003.com:3003/eureka
+  instance:
+    instance-id: order-2
+    prefer-ip-address: false
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 60
+spring:
+  application:
+    name: server-order

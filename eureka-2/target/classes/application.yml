@@ -1,0 +1,13 @@
+server:
+  port: 3002
+eureka:
+  instance:
+    hostname: eureka3002.com
+  server:
+    a-s-g-update-interval-ms: 4000
+    enable-self-preservation: false
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka3001.com:3001/eureka,http://eureka3003.com:3003/eureka
